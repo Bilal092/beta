@@ -10,11 +10,11 @@ This script computes Renyi Entropy of a point on probaility Simplex.
 '''
 
 def Entropy(p, alph):
-    assert(np.all(p >= 0)),"Probabilities cannot be neagtive"
+    assert(np.all(p >= 0)),"Probabilities cannot be negative"
     assert(alph >=0 ), "order cannot be nagative"
     # Shannon entropy
     if alpha == 1:
-        return -sum(p*np.log2(p))
+        return -sum(np.log2(p**p))
     # Min Entropy
     elif alpha == np.inf:
         return -np.log2(np.max(2))  
