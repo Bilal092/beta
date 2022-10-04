@@ -7,6 +7,6 @@ def Bures_Distance(B, A):
     assert len(A.shape) == 2, "Input must 2-D."
     assert len(B.shape) == 2, "Input must 2-D."
     assert A.shape[0] == B.shape[0], "Input must be square."
-    assert B.shape[0] == B.shape[0], "Input muyst be square."
+    assert B.shape[1] == B.shape[1], "Input muyst be square."
 
     return np.sqrt(np.trace(A + B - 2*sp.linalg.sqrtm(B@A)))
