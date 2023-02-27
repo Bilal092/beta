@@ -6,7 +6,7 @@ import scipy as sp
 #%%
 # Renyi Entropy function
 '''
-This script computes Renyi Entropy of a point on probaility Simplex.
+This script computes Renyi Entropy of a point on probability Simplex.
 '''
 
 def Entropy(p, alph):
